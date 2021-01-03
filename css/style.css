@@ -1,0 +1,158 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  padding: 0 20px;
+  background: #eee;
+}
+
+a {
+  color: #222;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #222;
+}
+
+.foodie .title {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.foodie .title h2 {
+  font-family: 'Sansita Swashed', cursive !important;
+}
+
+
+.star2 i {
+  font-size: 25px;
+  color:#ac1a2d;
+}
+
+.star1 {
+  color:#fbabad;
+}
+
+.star3 {
+  color:#faa268;
+}
+
+.wrapper{
+  width: 100%;
+  padding: 25px 30px 30px 30px;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.wrapper .nav {
+  background: linear-gradient(60deg, #ab47bc, #7b1fa2);
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: -65px;
+  box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.2), 0 13px 24px -11px rgba(156, 39, 176, 0.6);
+} 
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #fff;
+  background:rgba(255, 255, 255, 0.2);
+}
+
+.nav-pills .nav-link {
+  color: #fff; 
+  margin-right: 10px;
+}
+
+.nav-pills .nav-link:hover {
+  background:rgba(255, 255, 255, 0.2); 
+}
+
+.food-menu-img {
+  height: 125px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.food-menu-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.6s ease;
+}
+
+.food-menu:hover .food-menu-img img {
+  transform: scale(1.08);
+}
+
+.food-menu-summary p {
+  font-size: 13px;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.food-menu-meta {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+
+.food-menu-meta div {
+  margin-right: 25px;
+}
+
+.food-menu-meta div:last-child {
+  margin-right: 0px;
+}
+
+.price h4 {
+  text-align: right;
+}
+
+.price h4 small {
+  display: block;
+  font-size: 12px;
+}
+
+
+
+
+
+
+
+
+@media (max-width:767px) {
+  .food-menu-img {
+    border-radius: 10px;
+  }
+
+  .food-menu-title h4 {
+    margin-top: 15px;
+  }
+
+  .mobile-view {
+    position: relative;
+  }
+
+  .mobile-view .price {
+    position: absolute;
+    bottom: 0;
+    right: 14px;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+
+  .price h4 {
+    background: rgba(163,64,183,0.8);
+    margin-bottom: 0;
+    text-align:center;
+    font-size: 14px;
+    color: #fff;
+    padding: 5px;
+  }
+}
